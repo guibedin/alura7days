@@ -10,15 +10,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Make a GET HTTP Request to IMDB API and print the JSON response in stdout
+        // Make a GET HTTP Request to IMDB API and print the response in stdout
         String apiKey = System.getenv("IMDB_API_KEY");
         URI uri = URI.create("https://imdb-api.com/en/API/Top250Movies/" + apiKey);
 
-        HttpClient client = HttpClient.newHttpClient();
+        HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(uri)
+                .GET()
                 .build();
         HttpResponse<String> response;
+
         try {
             response = client.send(request, HttpResponse.BodyHandlers.ofString());
             System.out.println(response.body());
