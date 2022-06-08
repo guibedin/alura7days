@@ -1,4 +1,4 @@
-package guibedin.alura7days;
+package guibedin.alura7days.day1;
 
 import java.net.URI;
 import java.net.http.HttpClient;
