@@ -1,15 +1,16 @@
-package guibedin.alura7days.day3;
+package guibedin.alura7days.day3.parse;
 
 public class Movie {
     private String title;
-    private String urlImage;
-    private double rating;
+    private String image;
+    private double imDbRating;
     private int year;
 
+    public Movie() { }
     public Movie(String title, String urlImage, double rating, int year) {
         this.title = title;
-        this.urlImage = urlImage;
-        this.rating = rating;
+        this.image = urlImage;
+        this.imDbRating = rating;
         this.year = year;
     }
 
@@ -17,8 +18,8 @@ public class Movie {
     public String toString() {
         return "Movie{" +
                 "title='" + title + '\'' +
-                ", urlImage='" + urlImage + '\'' +
-                ", rating=" + rating +
+                ", urlImage='" + image + '\'' +
+                ", rating=" + imDbRating +
                 ", year=" + year +
                 '}';
     }

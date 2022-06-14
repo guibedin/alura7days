@@ -1,12 +1,19 @@
 package guibedin.alura7days;
 
-import guibedin.alura7days.day1.Day1;
-import guibedin.alura7days.day2.Day2;
+import guibedin.alura7days.day3.record.Day3Record;
 
 public class Main {
 
     public static void main(String[] args) {
-        Day1.execute();
-        Day2.execute();
+        try {
+//            Day1.execute();
+//            Day2.execute();
+//            Day3.execute();
+//            Day3Jackson.execute();
+            Day3Record.execute();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
