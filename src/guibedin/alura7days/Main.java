@@ -3,6 +3,7 @@ package guibedin.alura7days;
 import guibedin.alura7days.day3.jackson.Day3Jackson;
 import guibedin.alura7days.day3.parse.Day3;
 import guibedin.alura7days.day3.record.Day3Record;
+import guibedin.alura7days.day4.Day4;
 
 public class Main {
 
@@ -10,11 +11,12 @@ public class Main {
         try {
 //            Day1.execute();
 //            Day2.execute();
-            Day3.execute();
-            System.out.println("==============================");
-            Day3Jackson.execute();
-            System.out.println("==============================");
-            Day3Record.execute();
+//            Day3.execute();
+//            System.out.println("==============================");
+//            Day3Jackson.execute();
+//            System.out.println("==============================");
+//            Day3Record.execute();
+            Day4.execute();
         } catch(Exception e) {
             e.printStackTrace();
         }
